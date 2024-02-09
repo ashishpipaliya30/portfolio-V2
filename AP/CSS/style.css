@@ -1,124 +1,169 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  body::-webkit-scrollbar {
-    background-color: transparent;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-      rgb(210, 104, 141),
-      rgb(226, 24, 58),
-      rgb(162, 18, 187),
-      rgb(122, 122, 213)
-    );
-    border-radius: 20px;
-    height: 100px;
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 20px;
-    width: 100%;
-    z-index: 1000;
-    /* margin-right: 40px; */
-    /* background-color: #0a0136;  */
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: #15077a;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 25px;
-    text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    background-color: #0082ad;
-    border-radius: 40px;
-    color: black;
-  }
-  
-  .navbar-logo {
-    float: left;
-    padding: 0px 70px;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    rgb(210, 104, 141),
+    rgb(226, 24, 58),
+    rgb(162, 18, 187),
+    rgb(122, 122, 213)
+  );
+  border-radius: 20px;
+  height: 100px;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 1000;
+  /* margin-right: 40px; */
+  /* background-color: #0a0136;  */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #15077a;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #0082ad;
+  border-radius: 40px;
+  color: black;
+}
+
+.navbar-logo {
+  float: left;
+  padding: 0px 70px;
+}
+
+.navbar-right {
+  float: right;
+  padding: 0px 70px;
+}
+
+.menu-icon {
+  display: none;
+  float: right;
+  cursor: pointer;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a,
   .navbar-right {
-    float: right;
-    padding: 0px 70px;
+    float: none;
+    display: block;
+    text-align: right;
   }
-  
-  .menu-icon {
+  .navbar-right {
+    margin-top: 16px;
     display: none;
-    float: right;
-    cursor: pointer;
-    color: white;
-    padding: 15px;
-    font-size: 16px;
   }
-  
-  @media screen and (max-width: 500px) {
-    .navbar a,
-    .navbar-right {
-      float: none;
-      display: block;
-      text-align: right;
-    }
-    .navbar-right {
-      margin-top: 16px;
-      display: none;
-    }
-    .menu-icon {
-      display: block;
-    }
-    .navbar-right.responsive {
-      display: block;
-      position: absolute;
-      right: 0; /* Adjust this value as needed */
-      top: 60px; /* Adjust this value as needed */
-    }
-    .navbar-right.responsive a {
-      display: block;
-      text-align: center;
-    }
+  .menu-icon {
+    display: block;
   }
+  .navbar-right.responsive {
+    display: block;
+    position: absolute;
+    right: 0; /* Adjust this value as needed */
+    top: 60px; /* Adjust this value as needed */
+  }
+  .navbar-right.responsive a {
+    display: block;
+    text-align: center;
+  }
+}
 
-  /* Frontend developer */
+/* Frontend developer */
 
+.front {
+  text-align: center; /* Text ko center mein set karein */
+  padding: 20px; /* Padding add karein */
+  margin-top: 160px;
+}
+
+.front img {
+  width: 15%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: 20px;
+}
+
+.codding {
+  text-align: center; /* Center the image horizontally */
+}
+
+.codding img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -10px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+p {
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 768px) {
+  /* Small screen sizes ke liye styling */
   .front {
-    text-align: center; /* Text ko center mein set karein */
-    padding: 20px; /* Padding add karein */
-    margin-top: 150px;
+    font-size: 18px; /* Font size ko chota karein */
   }
+}
 
-  .front img{
-    margin-top: 30px;
-    width: 15%;
+@media screen and (min-width: 769px) {
+  /* Large screen sizes ke liye styling */
+  .front {
+    font-size: 24px; /* Font size ko bada karein */
   }
+}
 
-  h1{
-    font-family: cursive;
+.blue-container {
+  background-color: blue;
+  width: 100%; /* Set width to 100% */
+  height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+@media screen and (min-width: 768px) {
+  /* For screens larger than 768px */
+  .blue-container {
+      max-width: 768px; /* Limit the width to 768px */
+      margin: 0 auto; /* Center the container horizontally */
   }
-  p{
-    font-family: monospace;
-    font-size: x-large;
+}
+
+@media screen and (min-width: 992px) {
+  /* For screens larger than 992px */
+  .blue-container {
+      max-width: 992px; /* Limit the width to 992px */
+      margin: 0 auto; /* Center the container horizontally */
   }
-  
-  @media screen and (max-width: 768px) {
-    /* Small screen sizes ke liye styling */
-    .front {
-      font-size: 18px; /* Font size ko chota karein */
-    }
+}
+
+@media screen and (min-width: 1200px) {
+  /* For screens larger than 1200px */
+  .blue-container {
+      max-width: 1600px; /* Limit the width to 1200px */
+      margin: 0 auto; /* Center the container horizontally */
   }
-  
-  @media screen and (min-width: 769px) {
-    /* Large screen sizes ke liye styling */
-    .front {
-      font-size: 24px; /* Font size ko bada karein */
-    }
-  }
+}
