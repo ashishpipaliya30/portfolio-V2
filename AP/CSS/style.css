@@ -150,12 +150,13 @@ p {
 
 .blue-container p {
   color: white;
-  width: 10%; /* Adjust as needed */
+  width: 90%; /* Adjust as needed */
   margin: 0 auto;
+  font-size: 16px; /* Base font size */
 }
 
 .blue-container p strong {
-  font-size: 30px; /* Increase font size for the strong element */
+  font-size: 1.5em; /* Increase font size for the strong element */
   font-weight: bold; /* Make the text bold */
 }
 
@@ -163,19 +164,22 @@ p {
   /* For screens larger than 768px */
   .blue-container p {
     width: 70%; /* Adjust as needed */
+    font-size: 18px; /* Increase font size for larger screens */
   }
 }
 
 @media screen and (min-width: 992px) {
   /* For screens larger than 992px */
   .blue-container p {
-    max-width: 50%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
+    font-size: 20px; /* Increase font size for larger screens */
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* For screens larger than 1200px */
   .blue-container p {
-    max-width: 60%; /* Adjust as needed */
+    width: 60%; /* Adjust as needed */
+    font-size: 22px; /* Increase font size for larger screens */
   }
 }
