@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   color: #173a48;
   text-align: center;
-  padding: 14px 8px;
+  padding: 14px 5px;
   font-size: 17px;
   text-decoration: none;
 }
@@ -39,6 +39,7 @@ body::-webkit-scrollbar-thumb {
 .navbar a:hover {
   background-color: #173a48;
   border-radius: 25px;
+  padding: 10px;
   color: rgb(255, 255, 255);
 }
 
