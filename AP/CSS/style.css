@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .front img {
-  width: 50%;
+  width: 30%;
   height: 10%;
   display: block;
   margin: 13px auto 0; /* Center the image vertically and horizontally */
