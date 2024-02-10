@@ -109,11 +109,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .codding img {
-  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  width: 60%; /* Ensure the image doesn't exceed the width of its container */
   height: auto; /* Maintain the image's aspect ratio */
   display: block; /* Ensure the image behaves as a block element */
   margin: 0 auto; /* Center the image horizontally */
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -139,31 +139,43 @@ p {
 }
 
 .blue-container {
-  background-color: blue;
-  width: 100%; /* Set width to 100% */
-  height: 100vh; /* Set height to 100% of the viewport height */
+  background-color: #6E07F3;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blue-container p {
+  color: white;
+  width: 10%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.blue-container p strong {
+  font-size: 30px; /* Increase font size for the strong element */
+  font-weight: bold; /* Make the text bold */
 }
 
 @media screen and (min-width: 768px) {
   /* For screens larger than 768px */
-  .blue-container {
-      max-width: 768px; /* Limit the width to 768px */
-      margin: 0 auto; /* Center the container horizontally */
+  .blue-container p {
+    width: 70%; /* Adjust as needed */
   }
 }
 
 @media screen and (min-width: 992px) {
   /* For screens larger than 992px */
-  .blue-container {
-      max-width: 992px; /* Limit the width to 992px */
-      margin: 0 auto; /* Center the container horizontally */
+  .blue-container p {
+    max-width: 50%; /* Adjust as needed */
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* For screens larger than 1200px */
-  .blue-container {
-      max-width: 1600px; /* Limit the width to 1200px */
-      margin: 0 auto; /* Center the container horizontally */
+  .blue-container p {
+    max-width: 60%; /* Adjust as needed */
   }
 }
