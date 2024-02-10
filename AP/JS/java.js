@@ -1,57 +1,42 @@
-
 function toggleMenu() {
-    var x = document.getElementById("navbarOptions");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  var x = document.getElementById("navbarOptions");
+  if (x.classList.contains("show-menu")) {
+    x.classList.remove("show-menu");
+  } else {
+    x.classList.add("show-menu");
   }
+}
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  var offset = section.offsetTop - (window.innerHeight - section.offsetHeight) / 2;
 
-  function scrollFunction() {
-    var btn = document.getElementById("scroll-to-top-btn");
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  }
-
-  function toggleMenu() {
-    var x = document.getElementById("navbarOptions");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
-  function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    var offset =
-      section.offsetTop - (window.innerHeight - section.offsetHeight) / 2;
-
-    window.scrollTo({
-      top: offset,
-      behavior: "smooth",
-    });
-
-  window.onscroll = function () {
-    scrollFunction();
-  };
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth",
+  });
 
   var x = document.getElementById("navbarOptions");
-    x.style.display = "none";
-  }
+  x.classList.remove("show-menu");
+}
 
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var btn = document.getElementById("scroll-to-top-btn");
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
   }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

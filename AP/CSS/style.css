@@ -18,13 +18,12 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
 }
 
+/* Default styles for navbar */
 .navbar {
   position: fixed;
   top: 20px;
   width: 100%;
   z-index: 1000;
-  /* margin-right: 40px; */
-  /* background-color: #0a0136;  */
 }
 
 .navbar a {
@@ -33,7 +32,7 @@ body::-webkit-scrollbar-thumb {
   color: #15077a;
   text-align: center;
   padding: 14px 16px;
-  font-size: 25px;
+  font-size: 17px;
   text-decoration: none;
 }
 
@@ -45,48 +44,55 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-logo {
   float: left;
-  padding: 0px 70px;
+  /* padding: 0px 70px; */
 }
 
 .navbar-right {
   float: right;
-  padding: 0px 70px;
+  /* padding: 0px 70px; */
+  display: block; /* Ensure navbar options are always visible on larger screens */
 }
 
 .menu-icon {
-  display: none;
+  display: none; /* Initially hide the menu icon */
   float: right;
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 15px;
   font-size: 16px;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar a,
+.menu-icon:hover {
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Styles for navbar options on mobile-sized screens */
+@media screen and (max-width: 200px) {
   .navbar-right {
     float: none;
-    display: block;
-    text-align: right;
-  }
-  .navbar-right {
-    margin-top: 16px;
-    display: none;
-  }
-  .menu-icon {
-    display: block;
-  }
-  .navbar-right.responsive {
-    display: block;
+    display: none; /* Hide navbar options by default on mobile-sized screens */
     position: absolute;
-    right: 0; /* Adjust this value as needed */
-    top: 60px; /* Adjust this value as needed */
+    top: 60px; /* Adjust as needed */
+    right: 0;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    width: 100%; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adjust box shadow as needed */
   }
-  .navbar-right.responsive a {
+
+  .navbar-right a {
     display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
     text-align: center;
   }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on mobile-sized screens */
+  }
 }
+
 
 /* Frontend developer */
 
