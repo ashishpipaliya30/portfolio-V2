@@ -97,29 +97,28 @@ body::-webkit-scrollbar-thumb {
 /* Frontend developer */
 
 .front {
-  text-align: center; /* Text ko center mein set karein */
-  padding: 20px; /* Padding add karein */
-  margin-top: 160px;
+  text-align: center; 
+  margin-top: 140px;
+}
+
+.front p{
+  width: 60%;
+  margin: 10px auto 0;
 }
 
 .front img {
-  width: 15%; /* Ensure the image doesn't exceed the width of its container */
-  height: auto; /* Maintain the image's aspect ratio */
-  display: block; /* Ensure the image behaves as a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  margin-top: 20px;
+  width: 90%;
+  height: 10%;
+  display: block;
+  margin: 13px auto 0; /* Center the image vertically and horizontally */
 }
 
-.codding {
-  text-align: center; /* Center the image horizontally */
-}
-
-.codding img {
-  width: 60%; /* Ensure the image doesn't exceed the width of its container */
-  height: auto; /* Maintain the image's aspect ratio */
-  display: block; /* Ensure the image behaves as a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  margin-top: -20px;
+/* Apply negative margin only when screen size is larger */
+@media screen and (min-width: 768px) {
+  .front img {
+    max-width: 60%;
+    margin-top: 90px; /* Adjusted margin for responsiveness */
+  }
 }
 
 h1 {
