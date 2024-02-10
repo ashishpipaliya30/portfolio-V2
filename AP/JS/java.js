@@ -40,3 +40,19 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+function openEmailClient() {
+  // Replace 'your-email@example.com' with your actual email address
+  var emailAddress = 'ashishpipaliya30@gmail.com';
+  // Replace 'Subject' with your desired subject line
+  var subject = 'Hello!';
+  // Replace 'Body' with your desired email body
+  var body = 'Hi, I just wanted to say hello!';
+
+  // Construct the mailto link
+  var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+  // Open the email client
+  window.location.href = mailtoLink;
+}

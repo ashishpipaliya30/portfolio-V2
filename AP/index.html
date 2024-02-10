@@ -16,6 +16,7 @@
         <a href="#" onclick="scrollToSection('home-section')">Home</a>
         <a href="#" onclick="scrollToSection('about-me-section')">About</a>
         <a href="#" onclick="scrollToSection('contact-section')">Contact</a>
+        <button onclick="openEmailClient()">Say Hello</button>
       </div>
       <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </div>
@@ -29,20 +30,7 @@
       <img src="img/web_design_layout.gif" alt="" /><br />
     </div>
 
-    <!-- <div class="codding">
-        <img src="img/code1.jpg" alt="">
-      </div> -->
-
     <div class="blue-container">
-      <!-- <p><strong>Hii, I'm Ashish Pipaliya</strong><br><br>
-          I make websites look good and work smoothly. Using HTML, CSS, and
-          React Js, I turn designs into user-friendly web experiences. <br />
-          Always staying on top of the latest trends in web development. I am
-          always looking for a new projects. <br />
-          I like making things look good and work well. I'm always learning and
-          ready to make your online stuff awesome! I enjoy making them look good
-          and work smoothly
-        </p> -->
     </div>
 
     <div class="next-container">
@@ -77,5 +65,66 @@
         </div>
       </div>
     </div>
+
+    <script>
+     function toggleMenu() {
+  var x = document.getElementById("navbarOptions");
+  if (x.classList.contains("show-menu")) {
+    x.classList.remove("show-menu");
+  } else {
+    x.classList.add("show-menu");
+  }
+}
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  var offset = section.offsetTop - (window.innerHeight - section.offsetHeight) / 2;
+
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth",
+  });
+
+  var x = document.getElementById("navbarOptions");
+  x.classList.remove("show-menu");
+}
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var btn = document.getElementById("scroll-to-top-btn");
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function openEmailClient() {
+  // Replace 'your-email@example.com' with your actual email address
+  var emailAddress = 'ashishpipaliya30@gmail.com';
+  // Replace 'Subject' with your desired subject line
+  var subject = 'Hello!';
+  // Replace 'Body' with your desired email body
+  var body = 'Hi, I just wanted to say hello!';
+
+  // Construct the mailto link
+  var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+  // Open the email client
+  window.location.href = mailtoLink;
+}
+    </script>
   </body>
 </html>
