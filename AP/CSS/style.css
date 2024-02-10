@@ -101,9 +101,18 @@ body::-webkit-scrollbar-thumb {
   margin-top: 140px;
 }
 
-.front p{
+.front p {
   width: 60%;
   margin: 10px auto 0;
+  font-size: 30px; /* Default font size */
+}
+
+/* Apply responsive font size */
+@media screen and (max-width: 767px) {
+  .front p {
+    width: 80%;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }
 
 .front img {
@@ -117,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (min-width: 768px) {
   .front img {
     max-width: 60%;
-    margin-top: 90px; /* Adjusted margin for responsiveness */
+    margin-top: 200px; /* Adjusted margin for responsiveness */
   }
 }
 
