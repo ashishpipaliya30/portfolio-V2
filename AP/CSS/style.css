@@ -45,13 +45,29 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-logo {
   float: left;
-  /* padding: 0px 70px; */
 }
 
 .navbar-right {
   float: right;
-  /* padding: 0px 70px; */
-  display: block; /* Ensure navbar options are always visible on larger screens */
+  display: block;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 200px) {
+  .navbar a {
+    padding: 10px; /* Decrease padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  .navbar-right {
+    float: none; /* Remove float for smaller screens */
+    display: none; /* Hide navbar options for smaller screens */
+  }
+
+  .navbar {
+    position: relative;
+    top: auto;
+  }
 }
 
 .menu-icon {
