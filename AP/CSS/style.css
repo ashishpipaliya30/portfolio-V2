@@ -20,6 +20,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Default styles for navbar */
 .navbar {
+  background: rgba(0, 0, 0, 0.132);
   position: fixed;
   top: 20px;
   width: 100%;
