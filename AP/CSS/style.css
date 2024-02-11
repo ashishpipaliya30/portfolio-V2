@@ -3,128 +3,48 @@ body {
   font-family: Arial, sans-serif;
 }
 
-body::-webkit-scrollbar {
-  background-color: transparent;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    rgb(210, 104, 141),
-    rgb(226, 24, 58),
-    rgb(162, 18, 187),
-    rgb(122, 122, 213)
-  );
-  border-radius: 20px;
-  height: 100px;
-}
-
 /* Default styles for navbar */
 .navbar {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #173a48;
-  text-align: center;
-  padding: 14px 5px;
-  font-size: 17px;
+.navbar-logo a {
+  color: #000000;
+  font-size: 24px;
   text-decoration: none;
 }
 
-.navbar a:hover {
-  background-color: #173a48;
-  border-radius: 25px;
-  padding: 10px;
-  color: rgb(255, 255, 255);
-}
-
-.navbar-logo {
-  float: left;
-}
-
 .navbar-right {
-  float: right;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 200px) {
-  .navbar a {
-    padding: 10px; /* Decrease padding for smaller screens */
-    font-size: 14px; /* Decrease font size for smaller screens */
-  }
-
-  .navbar-right {
-    float: none; /* Remove float for smaller screens */
-    display: none; /* Hide navbar options for smaller screens */
-  }
-
-  .navbar {
-    position: relative;
-    top: auto;
-  }
-}
-
-.menu-icon {
-  display: none; /* Initially hide the menu icon */
-  float: right;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  padding: 15px;
-  font-size: 16px;
-}
-
-.menu-icon:hover {
-  background-color: #ccc;
-  border-radius: 50%;
-}
-
-/* Styles for navbar options on mobile-sized screens */
-@media screen and (max-width: 200px) {
-  .navbar-right {
-    float: none;
-    display: none; /* Hide navbar options by default on mobile-sized screens */
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    right: 0;
-    background-color: #f9f9f9; /* Adjust background color as needed */
-    width: 100%; /* Adjust width as needed */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Adjust box shadow as needed */
-  }
-
-  .navbar-right a {
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block; /* Show the menu icon on mobile-sized screens */
-  }
-}
-
-#navbarOptions button {
-  background-color: white; 
-  color: black; 
-  padding: 10px 20px;
-  font-size: 18px; 
+.navbar-right button {
+  background-color: white;
+  color: #173a48;
   border: 3px solid #173a48;
-  border-radius: 22px;
-  cursor: pointer; 
-  margin-top: 2.5px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
-/* Styles for the button hover effect */
-#navbarOptions button:hover {
-  background-color: #173a48; /* Change background color on hover */
+.navbar-right button:hover{
+  background-color: #173a48;
   color: white;
+}
+
+@media only screen and (max-width: 200px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .navbar-right {
+    margin-top: 10px;
+    justify-content: center;
+  }
 }
 
 /* Frontend developer */
@@ -137,19 +57,17 @@ body::-webkit-scrollbar-thumb {
 .front p {
   width: 60%;
   margin: 10px auto 0;
-  font-size: 22px; /* Default font size */
+  font-size: 17px;
 }
 
 .front strong {
-  font-size: 30px; /* Adjust the font size as needed */
+  font-size: 30px;
 }
 
-/* Apply responsive font size */
-@media screen and (max-width: 767px) {
-  .front p {
-    width: 80%;
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
+h1 {
+  font-size: 50px;
+  color: #173a48;
+  font-family: Eurostile;
 }
 
 .front img {
@@ -157,37 +75,41 @@ body::-webkit-scrollbar-thumb {
   height: 10%;
   display: block;
   margin: 13px auto 0; /* Center the image vertically and horizontally */
-  margin-bottom: -28px;
+  margin-bottom: 75px;
+}
+
+/* Apply responsive font size */
+@media screen and (max-width: 767px) {
+  .front p {
+    width: 80%;
+    margin-top: -16px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .front strong {
+    font-size: 22px;
+  }
+
+  h1{
+    font-size: 30px;
+    margin-top: -100px;
+  }
+
+  .front p{
+    margin-top: -10px;
+  }
+
+  .front img{
+    width: 60%;
+    margin-top: 60px;
+  }
 }
 
 /* Apply negative margin only when screen size is larger */
 @media screen and (min-width: 768px) {
   .front img {
     max-width: 60%;
-    margin-top: 100px; /* Adjusted margin for responsiveness */
-  }
-}
-
-h1 {
-  color: #173a48;
-  font-family: Eurostile;
-}
-p {
-  font-family: inherit;
-  font-size: x-large;
-}
-
-@media screen and (max-width: 768px) {
-  /* Small screen sizes ke liye styling */
-  .front {
-    font-size: 18px; /* Font size ko chota karein */
-  }
-}
-
-@media screen and (min-width: 769px) {
-  /* Large screen sizes ke liye styling */
-  .front {
-    font-size: 24px; /* Font size ko bada karein */
+    margin-top: 90px; /* Adjusted margin for responsiveness */
   }
 }
 
@@ -244,7 +166,7 @@ p {
   text-align: center;
   padding: 50px 20px;
   margin: -50px auto 0; /* Adjust margin-top to push it above the blue container */
-  width: 70%; /* Adjust width as needed */
+  width: 80%; /* Adjust width as needed */
 }
 
 .frontend-heading {
@@ -294,7 +216,7 @@ p {
   text-align: center;
   padding-top: 15px;
   margin-top: 50px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.542);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.542);
 }
 
 .my-skills h2 {
