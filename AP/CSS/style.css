@@ -18,8 +18,13 @@ body {
 }
 
 .navbar-right {
+  margin-right: 100px;
   display: flex;
   align-items: center;
+}
+
+.navbar-logo {
+  margin-left: 100px;
 }
 
 .navbar-right button {
@@ -31,7 +36,7 @@ body {
   border-radius: 25px;
 }
 
-.navbar-right button:hover{
+.navbar-right button:hover {
   background-color: #173a48;
   color: white;
 }
@@ -39,13 +44,29 @@ body {
 @media only screen and (max-width: 200px) {
   .navbar {
     flex-direction: column;
+    padding: 10px 0;
   }
   
   .navbar-right {
-    margin-top: 10px;
-    justify-content: center;
+    /* justify-content: center; */
+    margin: 90px 0;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .navbar-right button {
+    margin: 0;
+  }
+
+  /* Naye rules for mobile size */
+  .navbar-logo, .navbar-right {
+    margin: 0; /* Left and right margin removed */
   }
 }
+
 
 /* Frontend developer */
 
