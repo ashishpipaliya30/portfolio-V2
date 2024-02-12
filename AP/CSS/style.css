@@ -137,7 +137,7 @@ h1 {
 .blue-container {
   background-color: #173a48;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,6 +163,10 @@ h1 {
     width: 70%; /* Adjust as needed */
     font-size: 18px; /* Increase font size for larger screens */
   }
+  .blue-container{
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -186,8 +190,9 @@ h1 {
   background-color: white;
   text-align: center;
   padding: 50px 20px;
-  margin: -50px auto 0; /* Adjust margin-top to push it above the blue container */
-  width: 80%; /* Adjust width as needed */
+  margin: -50px auto 0; 
+  width: 80%; 
+  box-shadow: 0 0 12px black;
 }
 
 .frontend-heading {
@@ -199,15 +204,15 @@ h1 {
 .next-container p {
   font-size: 18px;
   color: #666;
-  margin-bottom: 30px;
 }
 
 .next-container img {
-  width: 15%; /* Baki images ka width 15% set kiya gaya hai */
-  max-width: 100%; /* Image ka maximum width parent container ke hisaab se set karega */
-  height: auto; /* Image ki height ko maintain karega */
-  aspect-ratio: 2/2; /* Image ka aspect ratio maintain karega */
-  object-fit: contain; /* Image ko contain karega, jisse aspect ratio maintain ho */
+  margin-top: 15px;
+  width: 15%; 
+  max-width: 100%;
+  height: auto; 
+  aspect-ratio: 2/2;
+  object-fit: contain;
 }
 
 #html {
@@ -220,6 +225,15 @@ h1 {
   .next-container {
     max-width: 90%; /* Adjust width for smaller screens */
   }
+
+  .next-container img{
+    margin-top: 15px;
+    width: 20%;
+  }
+
+  #html{
+    width: 20%;
+  }
 }
 
 .my-skills-wrapper {
@@ -231,7 +245,7 @@ h1 {
 
 .my-skills {
   margin: 30px 0;
-  background-color: #6e07f3;
+  background-color: #173a48;
   border-radius: 10px;
   height: 215px;
   text-align: center;
@@ -296,4 +310,67 @@ h1 {
   background: linear-gradient(90deg, #54b8d4, #2976f1);
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.414),
     inset 2px 2px 5px rgba(0, 0, 0, 0.542);
+}
+
+
+.container {
+  border: 2px solid black ;
+  width: 100%;
+  background-color: #173a48;
+  /* margin: 0 auto; */
+  margin: -30px auto 0;
+}
+
+.container h1{
+  font-size: 40px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 23.8%;
+  padding: 25px;
+  margin: 8px;
+  box-sizing: border-box;
+  background-color: #efefef;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Optional: Add margin between projects */
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project-link {
+  text-align: center;
+}
+
+.project-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-link a:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .project {
+      width: 100%; /* Make projects take up full width on screens smaller than 768px */
+  }
 }
