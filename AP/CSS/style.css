@@ -316,105 +316,105 @@ h1 {
 }
 
 
+/* Overall container styles */
 .container {
-  border: 2px solid black ;
-  width: 100%;
-  background-color: #173a48;
-  margin: auto 0;
-  margin-top: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-
-.project img {
-  width: 85%;
-  height: auto;
-  object-fit: contain; 
-  position: absolute; 
-  margin-top: -180px;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 10px black;
-}
-
-/* Responsive styling for smaller screens */
-@media screen and (max-width: 768px) {
-  .project img {
-    max-width: 80%; 
-  }
-}
-
-.container h1{
-  font-size: 40px;
-  font-weight: 100;
-  color: #ffffff;
-  margin-top: 40px;
-  text-align: center;
-}
-
+/* Projects grid layout */
 .projects {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
 }
 
+/* Individual project card styles */
 .project {
-  position: relative;
-  width: 23.8%;
-  height: 60vh;
-  margin: 8px;
-  box-sizing: border-box;
-  background-color: #efefef;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Project title styles */
 .project h2 {
-  margin-top: 20px;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+  background-color: #173a48;
+  color: white;
 }
 
-.project p {
-  margin-bottom: 90px;
-}
-
+/* Project content styles */
 .project-link {
-  text-align: center;
-  margin-top: 190px;
+  padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .project-link {
-    margin-top: 300px; /* Mobil cihazlar için daha küçük bir boşluk */
-  }
+/* Project image styles */
+.project-link img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px black;
+  border-bottom: 1px solid #dee2e6;
 }
+
+/* Project description styles */
+.project-link p {
+  margin: 10px 0;
+}
+
+/* Project link styles */
 .project-link a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #173a48;
-  text-decoration: none;
+  color: rgb(0, 0, 0);
   border: 3px solid #173a48;
-  border-radius: 11px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+/* Project link hover effect */
 .project-link a:hover {
   background-color: #173a48;
   color: white;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 1300px) {
-  .project {
-      width: 70%; /* Make projects take up full width on screens smaller than 768px */
-      text-align: center;
-      margin: 10px auto;
+/* Bottom container styles */
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
-  .project p {
-    margin-bottom: 90px;
+
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns for smaller screens */
+  }
+
+  .project {
+    border-radius: 0; /* Remove border radius for individual projects on smaller screens */
+  }
+
+  .project h2 {
+    font-size: 20px; /* Adjust project title font size for smaller screens */
+  }
+
+  .project-link {
+    padding: 10px; /* Adjust project link padding for smaller screens */
+  }
+
+  .project-link img {
+    border-bottom: none; /* Remove bottom border for project images on smaller screens */
   }
 }
 
-@media screen and (max-width: 1276px){
-
-} 
