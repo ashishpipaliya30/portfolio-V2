@@ -371,3 +371,60 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.contact {
+  background-color: #173a48;
+  color: white;
+  padding: 40px;
+  margin-top: 50px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.414); */
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  margin-left: -45px;
+  margin-top: -86px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-icons li {
+  margin: 10px;
+}
+
+.contact-icons img {
+  width: 100%; /* Set width to 100% for responsiveness */
+  width: 50px; /* Set max-width to limit size on larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px;
+}
+
+#mail {
+  width: 140px;
+  filter: brightness(0);
+  margin-bottom: 32px;
+  margin-right: -38px;
+}
+
+#insta {
+  width: 45px;
+}
+
+#twitter {
+  filter: brightness(0);
+  width: 53px;
+}
