@@ -159,23 +159,31 @@ h1 {
   font-weight: bold; /* Make the text bold */
 }
 
-@media screen and (min-width: 768px) {
-  /* For screens larger than 768px */
-  .blue-container p {
-    width: 70%; /* Adjust as needed */
-    font-size: 18px; /* Increase font size for larger screens */
+@media screen and (max-width: 767px) {
+  .blue-container {
+    height: 30vh; /* Reduce height for smaller screens */
   }
-  .blue-container{
-    width: 100%;
-    height: 50vh;
+
+  .blue-container p {
+    font-size: 18px; /* Increase font size for smaller screens */
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 969px) {
+  .blue-container {
+    height: 30vh; /* Reduce height for smaller screens */
+  }
+
+  .blue-container p {
+    font-size: 18px; /* Increase font size for smaller screens */
+  } 
+}
+
+@media screen and (min-width: 972px) {
   /* For screens larger than 992px */
   .blue-container p {
-    width: 50%; /* Adjust as needed */
-    font-size: 20px; /* Increase font size for larger screens */
+    width: 60%; /* Adjust as needed */
+    font-size: calc(0.02vw + 1rem); /* Responsive font size based on viewport width */
   }
 }
 
@@ -186,7 +194,6 @@ h1 {
     font-size: 18px; /* Increase font size for larger screens */
   }
 }
-
 .next-container {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.782);
   background-color: white;
@@ -256,13 +263,6 @@ h1 {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.542);
 }
 
-/* .my-skills h2 {
-  color: #ffffff;
-  font-size: 24px;
-  margin-bottom: 25px;
-  margin-top: 10px;
-} */
-
 .skill-bar {
   margin-top: 35px;
   display: flex;
@@ -314,107 +314,3 @@ h1 {
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.414),
     inset 2px 2px 5px rgba(0, 0, 0, 0.542);
 }
-
-
-/* Overall container styles */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Projects grid layout */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
-}
-
-/* Individual project card styles */
-.project {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Project title styles */
-.project h2 {
-  font-size: 24px;
-  margin: 0;
-  padding: 20px;
-  background-color: #173a48;
-  color: white;
-}
-
-/* Project content styles */
-.project-link {
-  padding: 20px;
-}
-
-/* Project image styles */
-.project-link img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 10px black;
-  border-bottom: 1px solid #dee2e6;
-}
-
-/* Project description styles */
-.project-link p {
-  margin: 10px 0;
-}
-
-/* Project link styles */
-.project-link a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: 3px solid #173a48;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-/* Project link hover effect */
-.project-link a:hover {
-  background-color: #173a48;
-  color: white;
-}
-
-/* Bottom container styles */
-.bottom-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .container {
-    width: 100%; /* Full width on smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  .projects {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns for smaller screens */
-  }
-
-  .project {
-    border-radius: 0; /* Remove border radius for individual projects on smaller screens */
-  }
-
-  .project h2 {
-    font-size: 20px; /* Adjust project title font size for smaller screens */
-  }
-
-  .project-link {
-    padding: 10px; /* Adjust project link padding for smaller screens */
-  }
-
-  .project-link img {
-    border-bottom: none; /* Remove bottom border for project images on smaller screens */
-  }
-}
-
