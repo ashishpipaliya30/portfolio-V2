@@ -161,22 +161,12 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .blue-container {
-    height: 30vh; /* Reduce height for smaller screens */
+    height: 40vh; /* Reduce height for smaller screens */
   }
 
   .blue-container p {
     font-size: 18px; /* Increase font size for smaller screens */
   }
-}
-
-@media screen and (max-width: 969px) {
-  .blue-container {
-    height: 30vh; /* Reduce height for smaller screens */
-  }
-
-  .blue-container p {
-    font-size: 18px; /* Increase font size for smaller screens */
-  } 
 }
 
 @media screen and (min-width: 972px) {
