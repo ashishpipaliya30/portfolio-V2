@@ -43,31 +43,28 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 900px) {
   .navbar {
     flex-direction: column;
     padding: 10px 0;
   }
   
   .navbar-right {
-    /* justify-content: center; */
-    margin: 90px 0;
+    margin: 0;
+    justify-content: space-between;
+    padding: 0 20px; /* Adjust padding for space between items */
   }
 
   .navbar-logo {
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 20px;
   }
 
   .navbar-right button {
     margin: 0;
   }
-
-  /* Naye rules for mobile size */
-  .navbar-logo, .navbar-right {
-    margin: 0; /* Left and right margin removed */
-  }
 }
+
 
 
 /* Frontend developer */
@@ -392,7 +389,7 @@ h1 {
 
 .contact-icons {
   margin-left: -45px;
-  margin-top: -86px;
+  margin-top: -86px;  
   list-style: none;
   padding: 0;
   display: flex;
