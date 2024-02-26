@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Default styles for navbar */
+/* styles for navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,8 +64,6 @@ body {
     margin: 0;
   }
 }
-
-
 
 /* Frontend developer */
 
@@ -152,8 +150,8 @@ h1 {
 }
 
 .blue-container p strong {
-  font-size: 1.5em; /* Increase font size for the strong element */
-  font-weight: bold; /* Make the text bold */
+  font-size: 1.5em; 
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -177,8 +175,8 @@ h1 {
 @media screen and (min-width: 1200px) {
   /* For screens larger than 1200px */
   .blue-container p {
-    width: 60%; /* Adjust as needed */
-    font-size: 18px; /* Increase font size for larger screens */
+    width: 60%;
+    font-size: 18px; 
   }
 }
 .next-container {
@@ -233,8 +231,8 @@ h1 {
 .my-skills-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Optional: Full height of the viewport */
+  align-items: center; 
+  height: 100vh; 
 }
 
 .my-skills {
@@ -309,11 +307,11 @@ h1 {
 
 .container h1 {
   text-align: center;
-  position: sticky; /* Added position sticky */
-  margin-top: 0px; /* Added top 0 */
-  background-color: white; /* Added background color */
-  padding: 10px 0; /* Added padding */
-  z-index: 1; /* Added z-index */
+  position: sticky;
+  margin-top: 0px; 
+  background-color: white; 
+  padding: 10px 0; 
+  z-index: 1;
 }
 
 .projects {
