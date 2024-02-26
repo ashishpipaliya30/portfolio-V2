@@ -45,7 +45,7 @@ body {
 
 @media only screen and (max-width: 800px) {
   .navbar {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 10px 0;
   }
 
@@ -53,18 +53,21 @@ body {
     margin: 0;
     justify-content: space-between;
     padding: 0 20px; /* Adjust padding for space between items */
+    display: flex; /* Add display:flex to align items */
+    align-items: center; /* Center align items vertically */
   }
 
   .navbar-logo {
-    margin-right: 600px;
+    margin-right: auto; /* Push logo to the left by using auto margin */
     margin-bottom: 20px;
   }
 
   .navbar-right button {
-    margin-left: 490px;
-    margin-top: -50px;
+    margin-left: 0; /* Reset margin-left */
   }
 }
+
+
 
 /* Frontend developer */
 
