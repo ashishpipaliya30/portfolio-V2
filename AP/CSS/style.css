@@ -383,7 +383,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.414); */
 }
 
 .contact h2 {
@@ -408,9 +407,9 @@ h1 {
 }
 
 .contact-icons img {
-  width: 100%; /* Set width to 100% for responsiveness */
-  width: 50px; /* Set max-width to limit size on larger screens */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  width: 50px; 
+  height: auto; 
   margin-top: 10px;
 }
 
