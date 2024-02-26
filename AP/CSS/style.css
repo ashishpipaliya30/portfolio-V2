@@ -15,7 +15,7 @@ body {
   color: #000000;
   font-size: 24px;
   text-decoration: none;
-} 
+}
 
 .navbar-right {
   margin-top: 25px;
@@ -43,12 +43,12 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
     padding: 10px 0;
   }
-  
+
   .navbar-right {
     margin: 0;
     justify-content: space-between;
@@ -56,12 +56,13 @@ body {
   }
 
   .navbar-logo {
-    margin: 0;
+    margin-right: 600px;
     margin-bottom: 20px;
   }
 
   .navbar-right button {
-    margin: 0;
+    margin-left: 490px;
+    margin-top: -50px;
   }
 }
 
@@ -108,16 +109,16 @@ h1 {
     font-size: 22px;
   }
 
-  h1{
+  h1 {
     font-size: 30px;
     margin-top: -100px;
   }
 
-  .front p{
+  .front p {
     margin-top: -10px;
   }
 
-  .front img{
+  .front img {
     width: 60%;
     margin-top: 60px;
   }
@@ -150,7 +151,7 @@ h1 {
 }
 
 .blue-container p strong {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -168,7 +169,9 @@ h1 {
   /* For screens larger than 992px */
   .blue-container p {
     width: 60%; /* Adjust as needed */
-    font-size: calc(0.02vw + 1rem); /* Responsive font size based on viewport width */
+    font-size: calc(
+      0.02vw + 1rem
+    ); /* Responsive font size based on viewport width */
   }
 }
 
@@ -176,7 +179,7 @@ h1 {
   /* For screens larger than 1200px */
   .blue-container p {
     width: 60%;
-    font-size: 18px; 
+    font-size: 18px;
   }
 }
 .next-container {
@@ -184,8 +187,8 @@ h1 {
   background-color: white;
   text-align: center;
   padding: 50px 20px;
-  margin: -50px auto 0; 
-  width: 80%; 
+  margin: -50px auto 0;
+  width: 80%;
   box-shadow: 0 0 12px black;
 }
 
@@ -200,9 +203,9 @@ h1 {
 
 .next-container img {
   margin-top: 15px;
-  width: 15%; 
+  width: 15%;
   max-width: 100%;
-  height: auto; 
+  height: auto;
   aspect-ratio: 2/2;
   object-fit: contain;
 }
@@ -218,12 +221,12 @@ h1 {
     max-width: 90%; /* Adjust width for smaller screens */
   }
 
-  .next-container img{
+  .next-container img {
     margin-top: 15px;
     width: 20%;
   }
 
-  #html{
+  #html {
     width: 20%;
   }
 }
@@ -231,8 +234,8 @@ h1 {
 .my-skills-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  height: 100vh; 
+  align-items: center;
+  height: 100vh;
 }
 
 .my-skills {
@@ -279,21 +282,21 @@ h1 {
 
 .skill-html {
   width: 90%;
-  background-color: #B5D4DF;
+  background-color: #b5d4df;
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.414),
     inset 2px 2px 5px rgba(0, 0, 0, 0.542);
 }
 
 .skill-css {
   width: 75%;
-  background-color: #B5D4DF;
+  background-color: #b5d4df;
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.414),
     inset 2px 2px 5px rgba(0, 0, 0, 0.542);
 }
 
 .skill-react {
   width: 30%;
-  background-color: #B5D4DF;
+  background-color: #b5d4df;
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.414),
     inset 2px 2px 5px rgba(0, 0, 0, 0.542);
 }
@@ -308,9 +311,9 @@ h1 {
 .container h1 {
   text-align: center;
   position: sticky;
-  margin-top: 0px; 
-  background-color: white; 
-  padding: 10px 0; 
+  margin-top: 0px;
+  background-color: white;
+  padding: 10px 0;
   z-index: 1;
 }
 
@@ -358,7 +361,7 @@ h1 {
   border-radius: 19px;
 }
 
-.project-link a:hover{
+.project-link a:hover {
   background-color: #173a48;
   color: white;
 }
@@ -368,13 +371,14 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .project h2{
+  .project h2 {
     text-align: center;
   }
 }
 
 .contact {
   background-color: #173a48;
+  box-shadow: 0 0 10px black;
   color: white;
   padding: 40px;
   margin-top: 50px;
@@ -392,7 +396,7 @@ h1 {
 
 .contact-icons {
   margin-left: -45px;
-  margin-top: -86px;  
+  margin-top: -86px;
   list-style: none;
   padding: 0;
   display: flex;
@@ -407,9 +411,9 @@ h1 {
 }
 
 .contact-icons img {
-  width: 100%; 
-  width: 50px; 
-  height: auto; 
+  width: 100%;
+  width: 50px;
+  height: auto;
   margin-top: 10px;
 }
 
