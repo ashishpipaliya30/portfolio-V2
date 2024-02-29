@@ -62,6 +62,10 @@ body {
     margin-bottom: 20px;
   }
 
+  .navbar-logo a{
+    margin-left: -70px;
+  }
+
   .navbar-right button {
     margin-left: 0; /* Reset margin-left */
   }
