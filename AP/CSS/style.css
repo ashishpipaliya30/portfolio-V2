@@ -67,7 +67,7 @@ body {
   }
 
   .navbar-right button {
-    margin-left: 0; /* Reset margin-left */
+    margin-left: 0; 
   }
 }
 
