@@ -51,13 +51,13 @@ body {
   .navbar-right {
     margin: 0;
     justify-content: space-between;
-    padding: 0 20px; /* Adjust padding for space between items */
-    display: flex; /* Add display:flex to align items */
+    padding: 0 20px; 
+    display: flex; /* to align items */
     align-items: center; /* Center align items vertically */
   }
 
   .navbar-logo {
-    margin-right: auto; /* Push logo to the left by using auto margin */
+    margin-right: auto; 
     margin-bottom: 20px;
   }
 
