@@ -45,7 +45,6 @@ body {
 
 @media only screen and (max-width: 800px) {
   .navbar {
-    /* flex-direction: column; */
     padding: 10px 0;
   }
 
@@ -71,10 +70,7 @@ body {
   }
 }
 
-
-
 /* Frontend developer */
-
 .front {
   text-align: center;
   margin-top: 140px;
@@ -173,7 +169,6 @@ h1 {
 }
 
 @media screen and (min-width: 972px) {
-  /* For screens larger than 992px */
   .blue-container p {
     width: 60%; /* Adjust as needed */
     font-size: calc(
@@ -183,7 +178,6 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-  /* For screens larger than 1200px */
   .blue-container p {
     width: 60%;
     font-size: 18px;
